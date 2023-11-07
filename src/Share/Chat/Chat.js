@@ -24,7 +24,7 @@ function Chat(props) {
 			if (messagesEnd.current) {
 				messagesEnd.current.scrollIntoView();
 			}
-		}, 100)
+		}, 200)
 
 	};
 

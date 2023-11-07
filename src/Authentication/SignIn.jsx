@@ -106,6 +106,12 @@ function SignIn(props) {
 							Sign up
 						</Link>
 					</div>
+					<div className='text-center '>
+						<span className='txt1'>Forgot password? </span>
+						<Link to='/forgot-password' className='txt2 hov1'>
+							Click
+						</Link>
+					</div>
 				</div>
 			</div>
 		</div>

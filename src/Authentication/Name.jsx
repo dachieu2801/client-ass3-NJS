@@ -20,15 +20,15 @@ function Name(props) {
 				{name}
 			</a>
 			<div className='dropdown-menu mt-3' aria-labelledby='pagesDropdown'>
-				{/* <Link
-					className='dropdown-item border-0 transition-link'
-					to={'/manage'}>
-					Manage
-				</Link> */}
 				<Link
 					className='dropdown-item border-0 transition-link'
 					to={'/history/'}>
 					History
+				</Link>
+				<Link
+					className='dropdown-item border-0 transition-link'
+					to={'/user/change-password'}>
+					Change password
 				</Link>
 			</div>
 		</li>

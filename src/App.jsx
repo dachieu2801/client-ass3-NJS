@@ -11,6 +11,8 @@ import Detail from './Detail/Detail';
 import Cart from './Cart/Cart';
 import SignIn from './Authentication/SignIn';
 import SignUp from './Authentication/SignUp';
+import ChangePassword from './Authentication/ChangePassword';
+import ForgotPassword from './Authentication/ForgotPassword';
 import Checkout from './Checkout/Checkout';
 import Shop from './Shop/Shop';
 import MainHistory from './History/Component/MainHistory';
@@ -28,6 +30,8 @@ function App() {
 					<Route path='/detail/:id' element={<Detail />} />
 					<Route path='/cart' element={<Cart />} />
 					<Route path='/signin' element={<SignIn />} /> 
+					<Route path='/user/change-password' element={<ChangePassword />} /> 
+					<Route path='/forgot-password' element={<ForgotPassword />} /> 
 					<Route path='/signup' element={<SignUp />} />
 				  <Route path='/checkout' element={<Checkout />} />
           <Route path='/history/:id' element={<DetailHistory />} />

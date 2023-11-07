@@ -6,7 +6,8 @@ import queryString from 'query-string';
 // Set up default config for http requests here
 // Please have a look at here `https://github.com/axios/axios#requestconfig` for the full list of configs
 const axiosClient = axios.create({
-	baseURL: 'https://nodejs-assign3.onrender.com',
+	// baseURL: 'https://nodejs-assign3.onrender.com',
+	baseURL: 'http://localhost:5000/',
 	// headers: {
 	// 	'content-type': 'application/json',	
 	// 	'Authorization': localStorage.getItem('token_user') || null,
@@ -16,7 +17,7 @@ const axiosClient = axios.create({
 axiosClient.interceptors.request.use(async (config) => {
 	config.headers={
 		'content-type': 'application/json',	
-	  'Authorization': localStorage.getItem('token_user')}
+	  'Authorization': localStorage.getItem('token_user')} || ''
 	// Handle token here ...
 	return config;
 });
